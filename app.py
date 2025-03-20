@@ -13,8 +13,8 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
 # Load environment variables
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-NGROK_AUTH_TOKEN = os.getenv("NGROK_AUTH_TOKEN")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyB9_uEfeyLvJ1O-PrT8Qlj8PlOG-p_MvsU")
+NGROK_AUTH_TOKEN = os.getenv("NGROK_AUTH_TOKEN", "2lOmx8bvmkfgMfZiC3ROucOdD1P_5RhV34WaJzsyKtTue89x7")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -40,7 +40,7 @@ else:
     logger.error("GOOGLE_API_KEY not set!")
 
 # Load YOLO model
-model_path = "D:/PROJECTS AND HACKATHONS/Thiran_25/best.pt"
+model_path = "best.pt"
 yolo_model = YOLO(model_path)
 
 # Load FAISS for RAG
