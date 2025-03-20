@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Path to the CSV file
-file_path = "D:/PROJECTS AND HACKATHONS/Thiran_25/9ef84268-d588-465a-a308-a864a43d0070.csv"
+file_path = "9ef84268-d588-465a-a308-a864a43d0070.csv"
 
 @app.route('/fetch-data', methods=['GET'])
 def fetch_data():
