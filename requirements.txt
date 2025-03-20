@@ -14,7 +14,7 @@ Flask==3.1.0
 Flask-Cors==5.0.0
 google-auth==2.38.0
 faiss-cpu
-faiss-gpu
+
 gunicorn==23.0.0
 httpx==0.28.1
 huggingface-hub==0.28.1
