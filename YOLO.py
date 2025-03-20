@@ -29,7 +29,7 @@ def load_yolov10_model(model_path):
         raise RuntimeError("Failed to load the YOLO model.") from e
 
 # ✅ Initialize YOLO model
-yolov10_model_path = "D:/PROJECTS AND HACKATHONS/Thiran_25/best.pt"
+yolov10_model_path = "best.pt"
 yolov10_model = load_yolov10_model(yolov10_model_path)
 
 # ✅ Initialize Roboflow Client
